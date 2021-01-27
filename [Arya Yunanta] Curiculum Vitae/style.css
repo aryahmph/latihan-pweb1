@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 23px;
+  color: #252525;
+  line-height: 40px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  width: 90vw;
+  margin: 50px auto;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.header hr {
+  width: 20vw;
+  height: 0px;
+  border-top: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 50px auto;
+  margin-top: 50px;
+  
+}
+.container h2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.container-start {
+  display: flex;
+  justify-content: center;
+  width: 29vw;
+}
+.container-start img {
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,.2));
+}
+
+
+.container-mid {
+  align-self: flex-start;
+  width: 29vw;
+}
+
+.container-mid-pendidikan {
+  margin-top: 50px;
+}
+
+.container-end {
+  align-self: flex-start;
+  width: 29vw;
+}
+.container-end-riwayat-organisasi {
+  margin-bottom: 50px;
+}
+.container-end li img {
+  margin-top: 15px;
+}
+.bahasa-img {
+  margin-top: 30px;
+}
+.bahasa-img img {
+  margin-right: 20px;
+}
+
+.social-media {
+  width: 90vw;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.social-media h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.social-media a {
+  margin-right: 7px;
+}
+.social-media img {
+  width: 30px;
+}
+
+.bg {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  background-color: #E7F6FF;
+  height: 40vh;
+  margin-top: -280px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1368px) {
+  body {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .container h2 {
+    font-size: 28px;
+  }
+  .container-start img {
+    width: 360px;
+  }
+  .container-end li img {
+    width: 310px;
+  }
+  .bahasa-img img:nth-child(1) {
+    width: 130px;
+  }
+  .bahasa-img img:nth-child(2) {
+    width: 70px;
+  }
+  .social-media {
+    margin-top: 40px;
+  }
+  .social-media img {
+    width: 26px;
+    margin-right: 4px;
+  }
+  .bg {
+    margin-top: -180px;
+  }
+}
